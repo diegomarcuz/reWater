@@ -115,9 +115,9 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
   - Envia o nível da agua no formato JSON através do protocolo Firmata até o Node-red.
   
 ~~~C++
-      Firmata.sendString((String("{\"distancia_d\":")
-        +String(qtdAguaEmCm)
-        +String("}")).c_str());
+  Firmata.sendString((String("{\"distancia_d\":")
+  +String(qtdAguaEmCm)
+  +String("}")).c_str());
 ~~~
  
   - O Node-Red foi utilizado como plataforma de desenvolvimento para conseguir usar o protocolo de comunicação MQTT, assim que o Node-Red faz a separação dos dados para Volume (nó Transformar o cm em porcentagem) e o próprio Nível da água (nó distancia_selected), este envia para o MQTT broker
