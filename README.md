@@ -93,5 +93,6 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
 
   - Envia o nível da agua no formato JSON através do protocolo Firmata até o Node-red.
   
-    ![Alt text](/assets/envia-agua.png)
+    <img src="/assets/envia-agua.png" alt="drawing" width="300" height="65"/>
+ 
     
