@@ -63,44 +63,62 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
  - **Node-Red**: é uma ferramenta de desenvolvimento baseada em fluxos para programação visual
 
 ## Documentação 
-  -  define os pinos trigger 13 e echo 12 para comunicação do sensor com o arduino
-  
-    ˋˋˋ
-    
-    #define pino_trigger 13
-    #define pino_echo 12
-
-    
-   ˋˋˋ
- 
 
   -  responsável por incluir a biblioteca Ultrasonic para ativar o sensor JSN SR-04T
   
-     ![Alt text](/assets/biblioteca.png)
-     
+~~~C++
+ #include <Ultrasonic.h>
+~~~
+
+  -  define os pinos trigger 13 e echo 12 para comunicação do sensor com o arduino
+
+~~~C++
+ #define pino_trigger 13
+ #define pino_echo 12
+~~~
+
   -  inicializa a biblioteca passando como parametro os pinos
   
-     ![Alt text](/assets/ultrasonic.png)
+~~~C++
+  Ultrasonic  ultrasonic(pino_trigger, pino_echo);
+~~~
      
   -  A distância é recebida em segundos e transformada em centímetros. 
   
-     ![Alt text](/assets/converte-cm.png)
+~~~C++
+     long microsec = ultrasonic.timing();
+     cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
+~~~
      
   - Valida se essa distância é igual a zero, se for retorna e é calculado novamente.
   
-    ![Alt text](/assets/igual-zero.png)
+~~~C++
+ if(cmMsec == 0){
+        return;
+  }
+~~~
     
   - Faz a diferença entra a distância e o tamanho do reservatório em centímetros para obter-se o nível da água.
   
-    ![Alt text](/assets/subtrai-tam-reservatorio.png)
+~~~C++
+   qtdAguaEmCm =91 - cmMsec;
+~~~
   
   - Valida se o reservatório está cheio, se estiver a distancia é igual ou maior ao tamanho do reservatório então o nível de agua é configurado para ser o tamanho do reservatório.
   
-    ![Alt text](/assets/validada-reservatorio-cheio.png)
+~~~C++
+  if(cmMsec >= 91){
+        qtdAguaEmCm = 91;
+  }
+~~~
 
   - Envia o nível da agua no formato JSON através do protocolo Firmata até o Node-red.
   
-    <img src="/assets/envia-agua.png" alt="drawing" width="700" height="100"/>
+~~~C++
+      Firmata.sendString((String("{\"distancia_d\":")
+        +String(qtdAguaEmCm)
+        +String("}")).c_str());
+~~~
  
   - O Node-Red foi utilizado como plataforma de desenvolvimento para conseguir usar o protocolo de comunicação MQTT, assim que o Node-Red faz a separação dos dados para Volume (nó Transformar o cm em porcentagem) e o próprio Nível da água (nó distancia_selected), este envia para o MQTT broker
   
@@ -108,11 +126,18 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
     
   - No **nó Transformar o cm em porcentagem** ocorre a transformação para porcentagem do nível da agua baseado no tamanho do reservatório.
   
-    ![Alt text](/assets/primeiro-no.png)
+~~~javascript
+var cm = msg.payload.distancia_d;
+msg.payload = Math.round((cm /91)*100);
+return msg;
+~~~
     
   - No **nó distancia_selected** ocorre apenas a seleção do nível da água.
   
-    <img src="/assets/segundo-no.png" alt="drawing" />
+~~~javascript
+msg.payload = msg.payload.distancia_d;
+return msg;
+~~~
   
     
   - Nos nós **oic/distanciaCm** e **oic/volumeEmPorcentagem** ocorre o envio do dados depois da transformação para o MQTT broker, respectivamente o nível da água e o volume em porcentagem.
