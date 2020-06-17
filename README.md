@@ -75,7 +75,23 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
   
      ![Alt text](/assets/ultrasonic.png)
      
-  -  define após um certo tempo o envio no formato JSON, quantidade de agua já ocupado do reservatório.
+  -  A distância é recebida em segundos e transformada em centímetros. 
   
-     ![Alt text](/assets/validacao.png)
+     ![Alt text](/assets/converte-cm.png)
+     
+  - Valida se essa distância é igual a zero, se for retorna e é calculado novamente.
+  
+    ![Alt text](/assets/igual-zero.png)
+    
+  - Faz a diferença entra a distância e o tamanho do reservatório em centímetros para obter-se o nível da água.
+  
+    ![Alt text](/assets/subtrai-tam-reservatorio.png)
+  
+  - Valida se o reservatório está cheio, se estiver a distancia é igual ou maior ao tamanho do reservatório então o nível de agua é configurado para ser o tamanho do reservatório.
+  
+    ![Alt text](/assets/validada-reservatorio-cheio.png)
 
+  - Envia o nível da agua no formato JSON através do protocolo Firmata até o Node-red.
+  
+    ![Alt text](/assets/envia-agua.png)
+    
