@@ -65,6 +65,11 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
 ## Documentação 
   -  define os pinos trigger 13 e echo 12 para comunicação do sensor com o arduino
   
+    ˜˜˜c++
+    #define pino_trigger 13
+    #define pino_trigger 12
+    ˜˜˜
+  
      ![Alt text](/assets/pinos.png)
 
   -  responsável por incluir a biblioteca Ultrasonic para ativar o sensor JSN SR-04T
@@ -105,7 +110,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
     
   - No **nó distancia_selected** ocorre apenas a seleção do nível da água.
   
-    <img src="/assets/segundo-no.png" alt="drawing" width="500" height="100"/>
+    <img src="/assets/segundo-no.png" alt="drawing" />
   
     
   - Nos nós **oic/distanciaCm** e **oic/volumeEmPorcentagem** ocorre o envio do dados depois da transformação para o MQTT broker, respectivamente o nível da água e o volume em porcentagem.
