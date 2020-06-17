@@ -122,7 +122,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
  
   - O Node-Red foi utilizado como plataforma de desenvolvimento para conseguir usar o protocolo de comunicação MQTT, assim que o Node-Red faz a separação dos dados para Volume (nó Transformar o cm em porcentagem) e o próprio Nível da água (nó distancia_selected), este envia para o MQTT broker
   
-   <img src="/assets/node-red.png" width="300" height="200" />
+   <img src="/assets/node-red.png" />
 
   
     
@@ -146,9 +146,10 @@ return msg;
   
   - No aplicativo MQTTool é assinado o tópico oic/distanciaCm para consultar o nível da água em centímetros.
   
-    ![Alt text](/assets/app.png)
- 
- 
+
+    <img src="/assets/app.jpg"  width="300"/>
+
+
  ## Fluxograma
  
   ![Alt text](/assets/fluxo1.png)
