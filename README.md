@@ -116,5 +116,6 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
  
  ## Fluxograma
  
-  ![Alt text](/assets/fluxo.png)
+  ![Alt text](/assets/fluxo1.png)
   
+  ![Alt text](/assets/fluxo2.png)
