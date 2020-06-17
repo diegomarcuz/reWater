@@ -65,15 +65,14 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
 ## Documentação 
   -  define os pinos trigger 13 e echo 12 para comunicação do sensor com o arduino
   
-    ˜˜˜C++
+    ˋˋˋ
     
     #define pino_trigger 13
     #define pino_echo 12
 
     
-    ˜˜˜
-  
-     ![Alt text](/assets/pinos.png)
+   ˋˋˋ
+ 
 
   -  responsável por incluir a biblioteca Ultrasonic para ativar o sensor JSN SR-04T
   
