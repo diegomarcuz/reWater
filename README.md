@@ -23,7 +23,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
   
 ### 4. Ao abrir o Node-Red: 
   - Pressionar Command + I (Mac) ou CTRL + 1 (Windows) para a inserir o código JSON.
-  - Abra o arquivo JSON, chamado flow-rewater.json (pode ser em qualquer editor de text) e cole o conteúdo dentro do pop-up     que abriu quando executou o passo a cima.
+  - Abra o arquivo JSON, chamado flows_rewater.local.json (pode ser em qualquer editor de text) e cole o conteúdo dentro do       pop-up que abriu quando executou o passo a cima.
   - Uma vez copiado o JSON, clique em Import ou Importar (Aparecerá uma fluxos com varios nós)
   - Clique duas vezes no primeiro nó, chamado "String" e conecte a mesma porta mencionada do passo 2, de acordo com seu          sistema operacional, clique em Update ou Atualizar e logo em seguida Done ou Ok.
   - Clique em Deploy no canto superior direito, quando debaixo do nó chamado "String" aparecer Connected ou Conectado, a          aplicação está pronta para uso. 
