@@ -62,7 +62,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
 
  - **Node-Red**: é uma ferramenta de desenvolvimento baseada em fluxos para programação visual
 
-## Documentação 
+## Integração 
 
   -  responsável por incluir a biblioteca Ultrasonic para ativar o sensor JSN SR-04T
   
