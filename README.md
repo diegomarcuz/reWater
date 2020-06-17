@@ -47,7 +47,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
 ## Visualização do funcionamento
  - Youtube: https://youtu.be/2HcChbMOpDQ
  
-## Descrição do Hardware
+## Descrição do itens utilizados
  - Sensor de distância JSN SR-04T: desenvolvido para calcular a distância com precisão de objetos entre 25cm à aproximadamente    2 metros, seu diferencial é sua resistência à umidade, sendo principalmente utilizados em ambientes úmidos, permite manter    uma grande distância do microcontrolador já que possui fio com 2.5 metros de comprimento.
  
  - Arduino R3 Uno: uma placa baseada em um microcontrolador, 14 pinos de entrada/saída digital (onde 6 podem ser usados como      saídas PWM), 6 entradas analógicas, um cristal oscilador de 16MHz, uma conexão USB, uma entrada de alimentação uma conexão    ICSP e um botão de resetentrada/saída digital.
@@ -62,9 +62,20 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
 
  - Node-Red: é uma ferramenta de desenvolvimento baseada em fluxos para programação visual
 
-### Documentação 
+## Documentação 
   -  define os pinos trigger 13 e echo 12 para comunicação do sensor com o arduino
+  
+     ![Alt text](/assets/pinos.png)
+
   -  responsável por incluir a biblioteca Ultrasonic para ativar o sensor JSN SR-04T
+  
+     ![Alt text](/assets/biblioteca.png)
+     
   -  inicializa a biblioteca passando como parametro os pinos
+  
+     ![Alt text](/assets/ultrasonic.png)
+     
   -  define após um certo tempo o envio no formato JSON, quantidade de agua já ocupado do reservatório.
+  
+     ![Alt text](/assets/validacao.png)
 
