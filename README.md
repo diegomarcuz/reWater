@@ -105,7 +105,8 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
     
   - No **nó distancia_selected** ocorre apenas a seleção do nível da água.
   
-    ![Alt text](/assets/segundo-no.png)
+    <img src="/assets/segundo-no.png" alt="drawing" width="700" height="100"/>
+  
     
   - Nos nós **oic/distanciaCm** e **oic/volumeEmPorcentagem** ocorre o envio do dados depois da transformação para o MQTT broker, respectivamente o nível da água e o volume em porcentagem.
   
