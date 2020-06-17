@@ -122,7 +122,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
  
   - O Node-Red foi utilizado como plataforma de desenvolvimento para conseguir usar o protocolo de comunicação MQTT, assim que o Node-Red faz a separação dos dados para Volume (nó Transformar o cm em porcentagem) e o próprio Nível da água (nó distancia_selected), este envia para o MQTT broker
   
-   <img src="/assets/node-red.png" />
+   <img src="/assets/node-red.png" width="600" />
 
   
     
