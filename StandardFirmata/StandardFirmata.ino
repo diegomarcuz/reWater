@@ -815,8 +815,6 @@ void loop()
        }
       Firmata.sendString((String("{\"distancia_d\":")
         +String(qtdAguaEmCm)
-        +String(", \"centimetros\":")
-        +String(cmMsec)
         +String("}")).c_str());
 
   
