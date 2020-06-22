@@ -45,7 +45,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
     
   
 ## Visualização do funcionamento
- - Youtube: https://youtu.be/2HcChbMOpDQ
+ - Youtube: https://youtu.be/R0sjIhnd0y0
  
 ## Descrição do itens utilizados
  - **Sensor de distância JSN SR-04T**: desenvolvido para calcular a distância com precisão de objetos entre 25cm à                aproximadamente  2 metros, seu diferencial é sua resistência à umidade, sendo principalmente utilizados em ambientes          úmidos, permite manter uma grande distância do microcontrolador já que possui fio com 2.5 metros de comprimento.
