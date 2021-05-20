@@ -1,6 +1,8 @@
 # reWater
-Utilizando IOT para captar nível de água em um reservatório caseiro, como balde para incentivar o reaproveitamento de água.
+IOT project in order to get water level inside a homemade shell, for example a bucket in order to encourage the reuse of water.
 
+## Video (Portuguese audio)
+ - [Check here](https://elasticbeanstalk-us-east-2-596714166773.s3.us-east-2.amazonaws.com/Projeto%20de%20Objetos%20Inteligentes%20Conectados%20-%20Universidade%20Presbiteriana%20Mackenzie.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXNhLWVhc3QtMSJIMEYCIQCL6Z8t%2B4ItfuPWADldrP1aYcHPsCw1C58iCv9hEJGQ2gIhAPxzq4yd7P048gyVW5QtlXtl6%2FhECtSBxOmNNp66pqPcKv8CCIT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNTk2NzE0MTY2NzczIgySoMrgLOZmhaLdTSkq0wIDN77iPliAFAvYgIsqsmvn9nQ90iLXPw9PgXXOh4CnMU9bbnkzlJ5UpLUzMqHyAiQhtoGfLk6LWL4mzAc4lFSYhj0raN%2FoKeedzuJqp6OeBKWS7d3Bp52Z4ioJEvBl7ohSzJEpOJm8xVa%2BQspCC2WTVUULlMepAb7DJDw4iw%2FqCiUMhyk1KjyMZx56QHzrTh2qj%2BsCdmVlgrg7An342dtOZUbMVa1tTCyxUCRyiriDNh760MsrHT9YXXIZnNu%2BGAS4cXZNafn6xukmfeEXFJl%2B8YsFqn2Ch8hyZP1A1ppAOtNKD3HfTMRuch%2F7Txa3fTCG%2B6hDHwX8alWfRWLShUAiRg0DKzNshiqFRZG46QnXS94t3FJcDYVbyt4ouVfM52AP12WoVK%2B%2BVmI%2FrMnqZMl561Q1j527VrJVHG69hQGZmQaxOsrwvkVUYkXFthBWdUjaV3wwiKmXhQY6sgIJ6WyRtWl9sW9aE2D56zJZz3x5Xf5xqVm%2FcAEUqtW448If%2BV%2FhZmsxdk9BDmghhsaMMyl%2BCQm19UNnIGZ5848YDDGaedLDcf0ZCjUsQt0mM6sQKUktduErjNI1YwtfIMuYdSmMN%2FYohr8lLhingn%2BAahVqHZjqb%2B5lP0Yq9qV6CcG7Mw19wQf%2BWp7Eabc3Lh4f4%2FQFeCjfMcr8VwW7jCoGOr5aoVXMehaGYC3sh%2BQhjKQh46eYP1g8PRU3jyDWFazX3f1K%2BZ%2BGVnj%2BTDkASdilxacIcAlVjnip2KC%2BkmiOyzs6x0u0DmVNISnHTmXYRJidZa5L7owNUYh7GoD2l8kJTZhTpvYGTrRSfaxTZudogL7CwYQ3Zc49%2B52oK14zC0lq0f35xiqN3avjRT3DLSU2DuA%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20210520T031952Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAYV3XPTH23KMJKTFH%2F20210520%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=c5cef98e330cc6fed06afe82207989e4e87d11e130d0688f29c7737590c7f5ab)
 
 ## Introdução 
 
@@ -44,8 +46,7 @@ Nosso projeto é constituído de um reservatório caseiro, como um balde, caixa 
    - Espera alguns segundos a distância em cm aparecerá.
     
   
-## Visualização do funcionamento
- - Youtube: https://youtu.be/R0sjIhnd0y0
+
  
 ## Descrição do itens utilizados
  - **Sensor de distância JSN SR-04T**: desenvolvido para calcular a distância com precisão de objetos entre 25cm à                aproximadamente  2 metros, seu diferencial é sua resistência à umidade, sendo principalmente utilizados em ambientes          úmidos, permite manter uma grande distância do microcontrolador já que possui fio com 2.5 metros de comprimento.
